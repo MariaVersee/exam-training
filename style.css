@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -8,79 +8,177 @@ body {
   max-width: 100vw;
   min-height: 100vh;
   font-family: "Poppins", sans-serif;
+  background-color: #eff1f7;
 }
 
 header {
   display: flex;
   padding: 55px 165px 0 165px;
   gap: 45px;
- 
-}
- 
-nav{width: 100%;}
-nav>ul{
-    display: flex;
-    justify-content: space-between;
-    list-style: none; 
-    
+  background-color: #fff;
 }
 
-nav>ul>.left{
-    display: flex;
-    gap: 29px;
+nav {
+  width: 100%;
 }
-nav>ul>.right{
-    display: flex;
-    gap: 37px;
+nav > ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
 }
-nav>ul>.left>li>a{
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: 700;
-  color: #9E9AA8;
-}
-nav>ul>.right>li>a{
-    text-decoration: none;
-      font-size: 15px;
-    font-weight: 700;
-    color: #9E9AA8;
-}
-.sign-up{
-padding: 9px 24px;
-background-color: #2BD0D0;
-border-radius: 28px;
-color: #FFF !important;
-text-decoration: none;
-font-weight: 700;
-}
-#burger{
-    display: none;
-}
-.top{
-    margin-top: 78px;
-    padding-left: 165px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-    
-}
-.top-left>p{
-   margin-top: 5px;
-   margin-bottom: 38px; 
-   font-size: 22px;
-   font-weight: 500;
-   color: #9E9AA8;
-   line-height: 36px;
 
+nav > ul > .left {
+  display: flex;
+  gap: 29px;
 }
-.top-left{
-    max-width: 565px;
+nav > ul > .right {
+  display: flex;
+  gap: 37px;
 }
-.top-left>h1{
-    font-size: 80px;
-    font-weight: 700;
-    letter-spacing: -2px;
-    line-height: 90px;
-    color:#34313D;
+nav > ul > .left > li > a {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 700;
+  color: #9e9aa8;
+}
+nav > ul > .right > li > a {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 700;
+  color: #9e9aa8;
+}
+.sign-up {
+  padding: 9px 24px;
+  background-color: #2bd0d0;
+  border-radius: 28px;
+  color: #fff !important;
+  text-decoration: none;
+  font-weight: 700;
+}
+#burger {
+  display: none;
+}
+.top {
+  padding-top: 78px;
+  padding-left: 165px;
+  padding-bottom: 152px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  background-color: #fff;
+}
+.top-left > p {
+  margin-top: 5px;
+  margin-bottom: 38px;
+  font-size: 22px;
+  font-weight: 500;
+  color: #9e9aa8;
+  line-height: 36px;
+}
+.top-left {
+  max-width: 565px;
+}
+.top-left > h1 {
+  font-size: 80px;
+  font-weight: 700;
+  letter-spacing: -2px;
+  line-height: 90px;
+  color: #34313d;
+}
+
+form {
+  background-color: #4b3f6b;
+  position: absolute;
+  bottom: -80px;
+  left: 50%;
+  transform: translate(-50%);
+  max-width: 1110px;
+  padding: 52px 65px;
+  border-radius: 10px;
+  display: flex;
+  gap: 24px;
+}
+#search {
+  max-width: 779px;
+  padding: 14px 32px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 36px;
+  color: #99979d;
+  border-radius: 10px;
+  border: none;
+}
+#search-btn {
+  padding: 18px 41px;
+  background-color: #2bd0d0;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 10px;
+  border: none;
+}
+.mid {
+  padding: 204px 24px 120px 24px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.mid > h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -1px;
+  color: #34313d;
+  margin-bottom: 18px;
+}
+.mid > p {
+  max-width: 540px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+  color: #9e9aa8;
+}
+.cards {
+  display: flex;
+  gap: 30px;
+  margin-top: 100px;
+}
+.card {
+  padding: 77px 32px 41px 32px;
+  background-color: #fff;
+  max-width: 350px;
+  border-radius: 5px;
+  position: relative;
+  text-align: left;
+}
+.card > h3 {
+  color: #34313d;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.card > p {
+  color: #9e9aa8;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 26px;
+}
+.circle {
+  width: 88px;
+  height: 88px;
+  background-color: #3a3054;
+  border-radius: 50%;
+  position: absolute;
+  top: -44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-2{
+  top: 44px;
+}
+.card-3{
+  top: 88px;
 }
