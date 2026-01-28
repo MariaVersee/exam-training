@@ -176,9 +176,57 @@ form {
   justify-content: center;
   align-items: center;
 }
-.card-2{
+.card-2 {
   top: 44px;
 }
-.card-3{
+.card-3 {
   top: 88px;
+}
+
+.bot {
+  background-color: #3a3054;
+  padding: 57px 0;
+  text-align: center;
+}
+
+.bot > h2 {
+  color: #fff;
+  margin-bottom: 32px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -1px;
+}
+footer {
+  background-color: #232127;
+  padding: 72px 165px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-nav {
+  display: flex;
+  gap: 78px;
+  align-items: flex-start;
+  width: fit-content;
+}
+.footer-nav > ul {
+  width: fit-content;
+  flex-direction: column;
+  gap: 10px;
+  display: flex;
+}
+.footer-nav > ul > li > a {
+  color: #b5b5b5;
+  text-decoration: none;
+}
+.nav-heading {
+  color: #fff !important;
+  margin-bottom: 12px !important;
+}
+.social-icons{
+  display: flex;
+  gap: 24px;
+height: fit-content;
+align-items: center;
+
 }
